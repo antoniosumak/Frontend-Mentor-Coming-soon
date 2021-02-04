@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+section {
+  max-width: 1440px;
+  margin: auto;
+  font-size: 1rem;
+  font-family: "Josefin Sans", sans-serif;
+  height: 100vh;
+  width: 100%;
+  background: white;
+  background: linear-gradient(135deg, white 0%, #fff5f0 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mobile {
+  display: none;
+}
+
+.col1 {
+  -webkit-box-flex: 55%;
+      -ms-flex: 55%;
+          flex: 55%;
+  position: relative;
+}
+
+.col1 img {
+  position: absolute;
+  margin-top: -150px;
+}
+
+.col1 h1 {
+  font-size: 5rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 15px;
+  color: #ce9797;
+}
+
+.col1 h1 span {
+  font-weight: 600;
+  color: #413a3a;
+}
+
+.col1 p {
+  margin-top: 20px;
+  line-height: 1.6rem;
+  color: #ce9797;
+}
+
+.col1 .text {
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  -webkit-transform: translate(-48%, -50%);
+          transform: translate(-48%, -50%);
+}
+
+.col1 input {
+  margin-top: 40px;
+  padding: 20px 0px;
+  padding-left: 30px;
+  width: 100%;
+  border-radius: 50px;
+  background-color: transparent;
+  border: 1px solid #ce9797;
+  outline: none;
+}
+
+.col1 ::-webkit-input-placeholder {
+  color: #ce9797;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+}
+
+.col1 :-ms-input-placeholder {
+  color: #ce9797;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+}
+
+.col1 ::-ms-input-placeholder {
+  color: #ce9797;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+}
+
+.col1 ::placeholder {
+  color: #ce9797;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+}
+
+.col1 .wrapinput {
+  position: relative;
+}
+
+.col1 .wrapinput .fas:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.07);
+          transform: scale(1.07);
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+  -webkit-filter: brightness(125%);
+          filter: brightness(125%);
+}
+
+.col1 .wrapinput .pogreska {
+  font-size: 0.8rem;
+  margin-left: 30px;
+  margin-top: 5px;
+  color: #f96262;
+  display: none;
+}
+
+@media screen and (min-width: 840px) {
+  .col2 {
+    -webkit-box-flex: 45%;
+        -ms-flex: 45%;
+            flex: 45%;
+    background-image: url(/images/hero-desktop.jpg);
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .fas {
+    background: #f8bfbf;
+    background: linear-gradient(135deg, #f8bfbf 0%, #ee8c80 100%);
+    position: absolute;
+    color: white;
+    z-index: 100;
+    padding: 21px 45px;
+    border-radius: 100px;
+    margin: 0;
+    top: 40px;
+    right: 0px;
+  }
+  #krivo {
+    color: red;
+    padding: 0;
+    position: absolute;
+    top: 57px;
+    right: 120px;
+    font-size: 1.5rem;
+    visibility: hidden;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  section {
+    position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  section .text {
+    text-align: center;
+  }
+  section .text h1 {
+    font-size: 2.8rem;
+  }
+  .col2 {
+    margin-top: 80px;
+    background-image: url(/images/hero-mobile.jpg);
+    height: 40%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    position: absolute;
+    display: block;
+    top: 0;
+    margin-top: 20px;
+    margin-left: 30px;
+  }
+  .fas {
+    background: #f8bfbf;
+    background: linear-gradient(135deg, #f8bfbf 0%, #ee8c80 100%);
+    position: absolute;
+    color: white;
+    z-index: 100;
+    padding: 21px 30px;
+    border-radius: 100px;
+    margin: 0;
+    top: 40px;
+    right: 0px;
+  }
+  #krivo {
+    color: red;
+    padding: 0;
+    position: absolute;
+    top: 57px;
+    right: 80px;
+    font-size: 1.5rem;
+    visibility: hidden;
+  }
+}
+/*# sourceMappingURL=style.css.map */

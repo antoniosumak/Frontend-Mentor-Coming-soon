@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="/style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <img
+        class="mobile"
+        src="/images/logo.svg"
+        alt="logo"
+        width="110px"
+        height="24px"
+      />
+      <div class="col1">
+        <div class="text">
+          <img
+            class="desktop"
+            src="/images/logo.svg"
+            alt="logo"
+            width="160px"
+            height="35px"
+          />
+          <h1>We're <span>coming soon</span></h1>
+          <p>
+            Hello fellow shoppers! We're currently building our new fashion
+            store. Add your email below to stay up-to-date with announcements
+            and our launch deals.
+          </p>
+          <div class="wrapinput">
+            <input
+              id="unos"
+              type="text"
+              name="unos1"
+              placeholder="Email Adress"
+            />
+            <i
+              class="fas fa-chevron-right"
+              onclick="provjeri(document.unos1)"
+            ></i>
+            <i id="krivo" class="fas fa-exclamation-circle"></i>
+            <p class="pogreska" id="greska">Please provide a email</p>
+          </div>
+        </div>
+      </div>
+      <div class="col2"></div>
+    </section>
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Antonio Šumak</a>.
+      </p>
+    </footer>
+    <script src="/app.js"></script>
+  </body>
+  <script>
+    window.onload = function () {
+      document.getElementById("krivo").style.visibility = "hidden";
+      document.getElementById("greska").style.display = "none";
+    };
+  </script>
+</html>
